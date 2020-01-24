@@ -1,18 +1,14 @@
 package io.dropwizard.jobs;
 
-import com.google.inject.Binding;
-import com.google.inject.Injector;
-import com.google.inject.Key;
-
-import io.dropwizard.jobs.Job;
-import io.dropwizard.jobs.JobConfiguration;
-import io.dropwizard.jobs.JobManager;
-
-import org.quartz.spi.JobFactory;
-
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
+
+import org.quartz.spi.JobFactory;
+
+import com.google.inject.Binding;
+import com.google.inject.Injector;
+import com.google.inject.Key;
 
 public class GuiceJobManager extends JobManager {
 

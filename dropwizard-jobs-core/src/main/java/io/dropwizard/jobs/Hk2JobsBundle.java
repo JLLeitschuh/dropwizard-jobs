@@ -1,6 +1,8 @@
 package io.dropwizard.jobs;
 
-import io.dropwizard.setup.Environment;
+import java.util.List;
+import java.util.Objects;
+
 import org.glassfish.hk2.api.Filter;
 import org.glassfish.hk2.api.ServiceLocator;
 import org.glassfish.jersey.internal.inject.InjectionManager;
@@ -9,8 +11,7 @@ import org.glassfish.jersey.server.spi.Container;
 import org.quartz.Scheduler;
 import org.quartz.spi.JobFactory;
 
-import java.util.List;
-import java.util.Objects;
+import io.dropwizard.setup.Environment;
 
 /**
  * A {@link JobsBundle} implementation that uses HK2 to instantiate a {@link Job}.
